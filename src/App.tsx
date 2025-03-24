@@ -1,14 +1,19 @@
 import React from "react";
-import TopBar from "./tabs/topbar"; // Ensure correct path
+
+import TopBar from "./tabs/topbar";
+import Music from "./tabs/Music";
+import Hero from "./tabs/Hero";
+import Code from "./tabs/Code";
+
+import "./css/index.css";
 
 const App: React.FC = () => {
   return (
-    <div className="hero-section">
+    <div className="app-container">
       <TopBar />
-      <div className="hero-content">
-        <h1>Victor Hernandez</h1>
-        <p>Developer | Musician | Producer</p>
-      </div>
+      <Hero />
+      <Code />
+      <Music />
     </div>
   );
 };

@@ -1,11 +1,10 @@
-/* TopBar.css */
 .topbar {
   width: 100%;
   height: 60px;
   background: linear-gradient(90deg, #1e1e1e, #333);
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   padding: 0 30px;
   border-bottom: 1px solid #444;
   position: fixed;
@@ -13,38 +12,67 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 .logo {
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: color 0.3s ease; /* Smooth transition for logo hover effect */
-  margin-right: 30px; /* Adds some spacing between the logo and the navigation buttons */
-}
-
-.nav-buttons {
   display: flex;
-  gap: 20px; /* Adjusted the gap between the links */
+  gap: 20px; 
   align-items: center;
 }
 
-.nav-buttons a {
+.logo a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-right: 30px;
+}
+
+.logo :hover {
+  color: #b061cf;
+  transform: scale(1.1); 
+}
+
+.logo ::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b061cf;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover::after {
+  transform: scaleX(1); 
+}
+
+.nav-buttons1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-buttons1 a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
   position: relative;
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scale */
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
-.nav-buttons a:hover {
-  color: #f4a261; /* Hover color */
-  transform: scale(1.1); /* Slightly increase size on hover */
+.nav-buttons1 a:hover {
+  color: #f4a261; 
+  transform: scale(1.1); 
 }
 
-.nav-buttons a::after {
+.nav-buttons1 a::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -56,6 +84,52 @@
   transition: transform 0.3s ease;
 }
 
-.nav-buttons a:hover::after {
-  transform: scaleX(1); /* Underline effect on hover */
+.nav-buttons1 a:hover::after {
+  transform: scaleX(1); 
+}
+
+.nav-buttons2 {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}
+
+.nav-buttons2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-buttons2 a:hover {
+  color: #6fec3d; 
+  transform: scale(1.1); 
+}
+
+.nav-buttons2 a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #6fec3d;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-buttons2 a:hover::after {
+  transform: scaleX(1); 
+}
+
+.line {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  margin-right: 30px; 
 }
