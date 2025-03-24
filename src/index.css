@@ -1,0 +1,42 @@
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(to bottom, #000000, #2c2c2c);
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/Vicci.jpg'), url('./assets/java.jpg'); /* Add second image */
+    background-size: contain, contain;
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    opacity: 0.20;
+  }
+  
+  .hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+  
