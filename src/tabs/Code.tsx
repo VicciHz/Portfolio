@@ -6,6 +6,7 @@ const Code: React.FC = () => {
   return (
     <motion.div
       className="code-section"
+      id="code-section"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

@@ -5,7 +5,7 @@ const TopBar: React.FC = () => {
   return (
     <nav className="topbar">
       <div className="logo">
-        <a href="#hero-section">Victor Hernandez</a>
+        <a href="#">Victor Hernandez</a>
       </div>
       <div className="nav-buttons1">
         <a href="#">Home</a>

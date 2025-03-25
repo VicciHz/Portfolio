@@ -2,7 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import '../css/music.css';
 
+  
+
+
 const Music: React.FC = () => {
+    
   return (
     <motion.div
       className="music-section"
@@ -11,6 +15,7 @@ const Music: React.FC = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
+
     >
       <motion.div
         className="music-content"
